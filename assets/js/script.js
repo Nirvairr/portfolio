@@ -170,7 +170,7 @@ document.querySelector(".form").addEventListener("submit", async function (e) {
   formBtn.querySelector("span").textContent = "Sending...";
 
   try {
-    const response = await fetch("http://localhost:5000/send-email", {
+    const response = await fetch("https://portfolio-backend-hkoz.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
